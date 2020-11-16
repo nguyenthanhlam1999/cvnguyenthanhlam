@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #151A33;
+    -webkit-font-smoothing: antialiased;
+}
+#wrapper {
+    width: 1170px;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    background: #1a253f;
+}
+#wrapper #header .profile .left .avatar, #site #wp-menu-reponsive .left .avatar{
+    width: 128px;
+    height: 128px;
+    position: relative;
+}
+#wrapper #header .profile .left .avatar img, #site #wp-menu-reponsive .left .avatar img
+{
+    width: 100%;
+    border-radius: 50%;
+}
+#wrapper #header .profile
+{
+    display: flex;
+    background: black;
+    align-items: center;
+    padding: 30px;
+    margin-top: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80% );
+    padding-bottom: 6rem;
+}
+#wrapper #header .profile .left
+{
+    display: flex;
+    width: 700px;
+    align-items: center;
+}
+#wrapper #header .profile .right
+{
+    width: 470px;
+}
+#wrapper #header .profile .left h2
+{
+    color: #7081b9;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#wrapper #header .profile .pro_name
+{
+    padding-left: 12px;
+}
+
+#wrapper #header .profile .left p
+{
+    color: #8997bd;
+    font-size: 14px;
+}
+#wrapper #header .profile .left .avatar span
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: #4d79f6;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #eff2f9;
+    box-shadow: 0px 0px 20px 0px rgba(32, 41, 54, 0.05);
+    cursor: pointer;
+}
+#wrapper #header .profile .right ul.contact
+{
+    margin-bottom: 16px;
+}
+#wrapper #header .profile .right ul.contact li{
+    color: #848db3;
+    margin-bottom: 17px;
+    font-size: 14px;
+}
+#wrapper #header .profile .right ul.contact li i
+{
+    margin-right: 20px;
+    font-size: 18px;
+}
+#wrapper #header .profile .right ul.social
+{
+    display: flex;
+    align-items: center;
+}
+#wrapper #header .profile .right ul.social li
+{
+    margin-right: 12px;
+}
+#wrapper #header .profile .right ul.social li a
+{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #eff2f9;
+    line-height: 36px;
+    text-align: center;
+}
+#wrapper #header .profile .right ul.social li:nth-child(1) a
+{
+    background: #2b55cc;
+}
+#wrapper #header .profile .right ul.social li:nth-child(2) a
+{
+    background: #4ac7ec;
+}
+#wrapper #header .profile .right ul.social li:nth-child(3) a
+{
+    background: #ff5da0;
+}
+#wp-content
+{
+    display: flex;
+}
+#content, #sidebar{
+	min-height: 600px;
+}
+#content{
+	padding-right: 30px;
+	width: 50%;
+	padding-bottom: 30px;
+}
+#sidebar{
+	width: 50%;
+}
+/* reponsive */
+#site{
+	position: relative;
+	overflow: hidden;
+}
+#site #wp-menu-reponsive{
+	transition: all 0.25s;
+	left: -250px;
+	top: 0px;
+	width: 250px;
+	background: #f5f5f5;
+	position: absolute;
+	height: 100%;
+}
+#wrapper #icon-menu-reponsive
+{
+    position: fixed;
+    left: 0px;
+    top:10px;
+    display: none;
+    color: #FFF;
+    background: #32323a;
+    font-size: 25px;
+    border: none;
+    padding: 5px 15px;
+}
+
+#site.open-menu-reponsive #wrapper{
+    left: 250px;
+    transition: all 1.5s;
+}
+#site.open-menu-reponsive #wp-menu-reponsive{
+    left: 0px;
+    transition: all 1.5s;
+}
+#site.open-menu-reponsive #icon-menu-reponsive{
+    left: 250px;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+/* reponsive */
+#site #wp-menu-reponsive
+{
+    background: #151A33;
+    display: none;
+}
+/* content */
+#wp-content
+{
+    padding: 3rem;
+
+}
+#wp-content .aboutus, #wp-content .skill, #wp-content .job, #wp-content .education
+{
+    margin-bottom: 2rem;
+}
+#wp-content .aboutus h1, #wp-content .job h1, #wp-content .skill h1  , #wp-content .hoppy h1, #wp-content .education h1, #wp-content .project h1
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #eff2f9;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 1px rgba(40, 54, 95, 0);
+    text-transform: uppercase;
+}
+#wp-content .aboutus h1::before, #wp-content .job h1::before, #wp-content .skill h1::before,  #wp-content .hoppy h1::before, #wp-content .education h1::before, #wp-content .project h1::before
+{
+    content: "|";
+    color:#eff2f9; 
+    padding-right: 12px;
+    font-weight: bold;
+}
+#wp-content .aboutus .info li, #wp-content .hoppy ul li, #wp-content .education ul li
+{
+    margin-bottom: 12px;
+        color: #848db3;
+        font-size: 14px;
+}
+#wp-content .aboutus .info li i
+{
+    margin-right: 12px;
+    font-size: 19px;
+    color: #4d79f6;
+}
+#wp-content .job .job_content
+{
+    line-height: 25px;
+    text-align: justify;
+    color: #848db3;
+    font-size: 14px;
+}
+#wp-content .skill .progress
+{
+    margin-bottom: 12px;
+    height: 0.5rem!important;
+    background: #848db3;
+}
+#wp-content .skill .progress-bar
+{
+    background: #4d79f6;
+}
+#wp-content .skill span
+{
+    color: #848db3;
+    margin-bottom: 12px;
+    font-size: 14px;
+    display: block;
+}
+#wp-content .project .project_1 span
+{
+    color : #4d79f6;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    display: block;
+}
+#wp-content .project .project_1 p
+{
+    color: #848db3;
+    font-size: 14px;
+    padding-bottom: 12px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
